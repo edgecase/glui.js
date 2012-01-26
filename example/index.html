@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Glue Demo: Todos</title>
+    <script src="./javascripts/jquery-1.7.1.min.js"></script>
+    <script src="./javascripts/underscore-min.js"></script>
+    <script src="./javascripts/glue.min.js"></script>
+    <script src="../lib/glui.js"></script>
+
+    <script src="./javascripts/todo.js"></script>
+  </head>
+
+  <body>
+    <form id="new-task">
+      <div>
+        <input type="text" name="user[name]" placeholder="Enter a new task" />
+        <input type="text" name="user[number]" placeholder="Enter a new task" />
+      </div>
+      <div>
+        <textarea name="user[description]" rows="2" cols="20">
+          At W3Schools you will find all the Web-building tutorials you need, from basic HTML to advanced XML, SQL, ASP, and PHP. 
+        </textarea>
+      </div>
+      <div>
+        <select>
+          <option>Milk</option>
+          <option>Coffee</option>
+          <option>Tea</option>
+        </select>
+      </div>
+      <div><input type="password" name="pwd" /></div>
+      <div>
+        <input type="radio" name="sex" value="male" /> Male<br />
+        <input type="radio" name="sex" value="female" /> Female
+      </div>
+      <div>
+        <input type="checkbox" name="vehicle[]" value="Bike" /> I have a bike<br />
+        <input type="checkbox" name="vehicle[]" value="Car" /> I have a car 
+      </div>
+      <div>
+        <select>
+          <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+          </optgroup>
+          <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <button type="submit">Click Me!</button>
+        <button type="submit">Submit Me!</button>
+        <button type="reset">Reset Me!</button>
+      </div>
+    </form>
+
+    <ul id="tasks"></ul>
+  </body>
+
+</html>

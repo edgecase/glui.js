@@ -1,0 +1,9 @@
+{ "name": "glue.js"
+, "version": "0.3.0"
+, "description": "Simple Controllers for JavaScript"
+, "dependencies":
+  {
+      "vows": ""
+    , "underscore" : ""
+  }
+}
